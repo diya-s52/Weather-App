@@ -1,0 +1,304 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("../images/uriel-xtgONQzGgOE-unsplash.jpg");
+    background-position: center;
+    background-repeat: 0 repeat;
+    background-size: cover;
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .weather-app {
+    max-width: 976px;
+    background-image: url("../images/background-day.png");
+    background-position: center;
+    background-repeat: 0 repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 56px;
+    background-color: #4370c7;
+    border-radius: 32px;
+    margin-top: 24px;
+    box-shadow: 1px 1px 20px #fffffff7, 1px 1px 40px #005368f7;
+  }
+  
+  .weather-app.nightmode {
+    max-width: 976px;
+    background-image: url("../images/background-night.png");
+    background-position: center;
+    background-repeat: 0 repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 56px;
+    background-color: #0f1d3c;
+    border-radius: 32px;
+    margin-top: 24px;
+  }
+  div.row.header {
+    padding-bottom: 88px;
+  }
+  
+  h1#city-name {
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    padding: 0;
+    line-height: 44px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    padding: 0;
+    opacity: 0.8;
+  }
+  
+  .form-control {
+    background-color: rgba(255, 254, 254, 0.953);
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 10px;
+    height: 44px;
+    padding-right: 24px;
+    border: 0;
+  }
+  
+  input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #757ca1d0 !important;
+  }
+  input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #757ca1d0 !important;
+    opacity: 1;
+  }
+  input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #757ca1d0 !important;
+    opacity: 1;
+  }
+  input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #757ca1d0 !important;
+  }
+  input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #757ca1d0 !important;
+  }
+  
+  input::placeholder {
+    /* Most modern browsers support this now. */
+    color: #757ca1d0 !important;
+  }
+  
+  .form-control.nightmode {
+    background-color: #273161;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 10px;
+    height: 44px;
+    padding-right: 24px;
+    border: 0px;
+  }
+  
+  #search-button {
+    background-color: #17249a;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 24px 12px 24px;
+    height: 44px;
+    margin-left: -40px;
+  }
+  #search-button.nightmode {
+    background-color: #e0e3ff;
+    color: #2e316a;
+    font-size: 14px;
+    font-weight: 500;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 24px 12px 24px;
+    height: 44px;
+    margin-left: -40px;
+  }
+  
+  #search-button:hover {
+    background-color: #1828b9;
+  }
+  #search-button.nightmode:hover {
+    background-color: #f7f7ff;
+  }
+  #location-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #17249a;
+    color: white;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 10px;
+    margin-left: 4px;
+  }
+  #location-button:hover {
+    background-color: #1828b9;
+  }
+  #location-button.nightmode:hover {
+    background-color: #f7f7ff;
+  }
+  #location-button.nightmode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e3ff;
+    color: #2e316a;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 10px;
+    margin-left: 4px;
+  }
+  div.row.body {
+    align-items: center;
+  }
+  .current-weather {
+    justify-content: start;
+    display: flex;
+    align-items: center;
+  }
+  h3#temperature {
+    font-size: 116px;
+    color: white;
+    font-weight: 300;
+    padding: 0;
+    line-height: 100px;
+    margin: 0;
+  }
+  .current-weather > ul {
+    margin: 0;
+    margin-left: -12px;
+    margin-top: 24px;
+  }
+  li#units {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    padding: 0;
+    list-style: none;
+  }
+  li > a {
+    color: rgba(244, 254, 255, 0.821);
+    text-decoration: none;
+  }
+  
+  li > a:hover {
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .active {
+    color: #ffffff;
+    cursor: default;
+    font-weight: 500;
+  }
+  
+  li#weather-description {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding: 0;
+    list-style: none;
+  }
+  li#weather-description:first-letter {
+    text-transform: uppercase;
+  }
+  
+  #weather-icon {
+    width: 200px;
+    margin-top: -40px;
+    margin-left: -12px;
+  }
+  
+  img.icon {
+    margin-right: 8px;
+    height: 20px;
+    width: 20px;
+  }
+  
+  ul#weather-info {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    list-style: none;
+    padding: 0;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-left: -24px;
+  }
+  
+  .weather-forecast {
+    background-color: rgba(10, 36, 128, 0.6);
+    margin: 48px 0 0 0;
+    padding: 32px 24px 16px 24px;
+    max-width: 100%;
+    border-radius: 20px;
+    max-height: 210px;
+  }
+  
+  .weather-forecast.nightmode {
+    background-color: #30326353;
+    margin: 48px 0 0 0;
+    padding: 32px 24px 16px 24px;
+    max-width: 100%;
+    border-radius: 20px;
+    max-height: 210px;
+  }
+  
+  .col.weekdays {
+    text-align: center;
+  }
+  h4 {
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+    opacity: 0.8;
+    margin: 0;
+  }
+  img.weekday-weather {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    padding: 8px;
+  }
+  p.forecast-temp {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: white;
+  }
+  p.weather-type {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+  }
+  
+  footer {
+    font-size: 19px;
+    font-weight: bold;
+    color: #243a68;
+    align-items: center;
+    padding-top: 8px;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    display: block;
+  }
+  footer > a {
+    color: rgb(0, 0, 0);
+  }
